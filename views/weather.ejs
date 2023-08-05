@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8 col-sm-10">
+          <h1 class="text-center mb-4">Weather in <%= weatherData.cityName %></h1>
+          <div class="card">
+            <div class="card-body">
+              <h2 class="card-title text-center"><%= weatherData.temperature %> &#8451;</h2>
+              <p class="card-text text-center"><%= weatherData.weatherDescription %></p>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Humidity: <%= weatherData.humidity %> %</li>
+                <li class="list-group-item">Wind Speed: <%= weatherData.windSpeed %> m/s</li>
+                <li class="list-group-item">Sunrise Time: <%= weatherData.sunriseTime %></li>
+                <li class="list-group-item">Sunset Time: <%= weatherData.sunsetTime %></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
